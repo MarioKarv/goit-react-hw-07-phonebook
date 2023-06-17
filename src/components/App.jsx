@@ -1,4 +1,4 @@
-import { PersistGate } from 'redux-persist/es/integration/react';
+// import { PersistGate } from 'redux-persist/es/integration/react';
 import { Provider } from 'react-redux';
 import { store, persistor } from 'redux/store';
 
@@ -10,7 +10,7 @@ import Filter from './filter/Filter';
 export const App = () => {
   return (
     <Provider store={store}>
-      <PersistGate loading={null} persistor={persistor}>
+      {/* <PersistGate loading={null} persistor={persistor}> */}
         <div className={css.container}>
           <h1>Phonebook</h1>
           <Form />
@@ -18,7 +18,7 @@ export const App = () => {
           <Filter />
           <Contacts />
         </div>
-      </PersistGate>
+      {/* </PersistGate> */}
     </Provider>
   );
 };
